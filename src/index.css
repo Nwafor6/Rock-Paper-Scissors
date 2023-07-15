@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed";
+    overflow: hidden;
+    
+}
+
+.body{
+    background-color:hsl(214, 47%, 23%) ;
+    font-weight:600;
+    overflow:hidden;
+    height: 100vh;
+
+}
+.main{
+    margin: 10px 100px 10px 100px;
+}
+p, h1,h2,h3{
+    margin: 0;
+}
+.header-board{
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border:3px solid hsl(217, 16%, 45%);
+    padding: 20px;
+    
+}
+.score-board{
+    background-color: white;
+    color: #000000;
+    padding: 10px 29px;
+    height: 81px;
+    border-radius: 10px;
+}
+.score-board h1{
+    font-weight: bold;
+}
+.gameContainer{
+    margin-top: 50px;
+    position: relative;
+}
+.triangle-bg{
+    text-align: center;
+}
+.triangle-bg img{
+    width: 300px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* margin-left:-100px ; */
+}
+.paper{
+    border: 10px solid hsl(230, 89%, 62%);
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    width: 76px;
+    height: 77px;
+    position: fixed;
+    left: -268px;
+    right: 0;
+    top: 163px;
+    margin: auto;
+}
+.game-icon img{
+    width: 30px;
+}
+.scissor{
+    border: 10px solid hsl(39, 89%, 49%);
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    width: 76px;
+    height: 77px;
+    position: fixed;
+    left: 0;
+    right: -268px;
+    top: 163px;
+    margin: auto;
+}
+.rock{
+    border: 10px solid hsl(349, 71%, 52%);
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    width: 76px;
+    height: 77px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 94px;
+    margin: auto;
+}
+.rule-text h3{
+    font-size:10px ;
+}
+.rule-text {
+    float: right;
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+.playSound h3{
+    font-size:10px ;
+}
+.playSound{
+    float: left;
+    position: absolute;
+    bottom: 10px;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.playSound button{
+    border: 0;
+    background-color: inherit;
+    color: inherit;
+}
+.rule-text button{
+    border: 0;
+    background-color: inherit;
+    color: inherit;
+}
+#top-close-btn{
+    display: block;
+}
+#bottom-close-btn{
+    display: none;
+}
+
+/* Picked styling */
+.pickedMain{
+    display: none;
+}
+.pickedContainer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+   text-align: center;
+   color: #fff;
+}
+.pickedContainer p {
+    font-size: 10px;
+}
+
+.playAgain{
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.playAgain button{
+    border: 0;
+    background-color: inherit;
+}
+.winlose-lg .playAgain{
+    padding: 5px;
+}
+.winlose-sm{
+    display: none;
+}
+.youPicked  .picked-img{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: 10px solid hsl(230, 89%, 62%);
+}
+.youPicked  img{
+    position: relative;
+    top: 19px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 45px;
+}
+.housePicked .picked-img{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: 10px solid hsl(230, 89%, 62%);
+}
+.housePicked img{
+    position: relative;
+    top: 19px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 45px;
+}
+
+/* Add sound component */
+#stopSound{
+    display:none
+}

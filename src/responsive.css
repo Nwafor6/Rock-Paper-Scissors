@@ -1,0 +1,163 @@
+@media(max-width:600px){
+    .main{
+        margin: 10px;
+    }
+}
+
+@media(max-width:500px){
+    .triangle-bg img{
+        width: 200px;
+
+    }
+    .game-icon img{
+        width: 20px;
+    }
+    .paper, .scissor, .rock{
+        width: 53px;
+        height: 49px;
+    }
+    .paper{
+        border: 5px solid hsl(230, 89%, 62%);
+        background-color: white;
+        text-align: center;
+        border-radius: 50%;
+        padding: 10px;
+        position: fixed;
+        left: -199px;
+        right: 0;
+        top: 163px;
+        margin: auto;
+    }
+
+    .scissor{
+        border: 5px solid hsl(39, 89%, 49%);
+        background-color: white;
+        text-align: center;
+        border-radius: 50%;
+        padding: 10px;       
+        position: fixed;
+        left: 0;
+        right: -199px;
+        top: 163px;
+        margin: auto;
+    }
+    .rock{
+        border: 5px solid hsl(349, 71%, 52%);
+        background-color: white;
+        text-align: center;
+        border-radius: 50%;
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 168px;
+        margin: auto;
+    }
+}
+@media(max-width:270px){
+
+    .header-board{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+        
+    }
+    .triangle-bg img{
+        width: 100px;
+
+    }
+    .game-icon img{
+        width: 10px;
+    }
+    .paper, .scissor, .rock{
+        width: 53px;
+        height: 49px;
+    }
+    .paper{
+        border: 5px solid hsl(230, 89%, 62%);
+        background-color: white;
+        text-align: center;
+        border-radius: 50%;
+        padding: 10px;
+        position: fixed;
+        left: -84px;
+        right: 0;
+        top: 263px;
+        margin: auto;
+    }
+
+    .scissor{
+        border: 5px solid hsl(39, 89%, 49%);
+        background-color: white;
+        text-align: center;
+        border-radius: 50%;
+        padding: 10px;       
+        position: fixed;
+        left: 0;
+        right: -84px;
+        top: 268px;
+        margin: auto;
+    }
+    .rock{
+        border: 5px solid hsl(349, 71%, 52%);
+        background-color: white;
+        text-align: center;
+        border-radius: 50%;
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 168px;
+        margin: auto;
+    }
+}
+/* Modal Styling */
+@media(max-width:500px){
+    
+    .modal-footer {
+        display:block;
+    }
+    .modal-main{
+        height: 100vh
+    }
+    .modal-body{
+        display: flex;
+        align-items: center;
+    }
+    #bottom-close-btn{
+        display: inline;
+    }
+    #top-close-btn{
+        display: none;
+    }
+    .modal-header{
+        display: block;
+        text-align: center;
+    }
+    .modal-header h3{
+        font-weight: bold;
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+}
+
+/* Styling for picked component */
+@media(max-width:500px){
+    .Picked{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .playAgain{
+
+        width: 50%;
+    }
+    .winlose-lg{
+        display: none;
+    }
+    
+    .winlose-sm{
+        display: block;
+    }
+}
